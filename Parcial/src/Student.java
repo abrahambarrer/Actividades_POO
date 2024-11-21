@@ -4,6 +4,12 @@ public class Student {
     public int age;
     public String gender;
 
+    public Student(){
+        this.name = "";
+        this.id = 0;
+        this.age = 0;
+        this.gender = "";
+    }
     public Student(String name, int id, int age, String gender) {
         this.name = name;
         this.id = id;
