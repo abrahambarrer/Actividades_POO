@@ -25,6 +25,7 @@ public class Section {
                 System.out.println("Nombre: " + arrayStu.get(i).getNombre());
                 System.out.println("Edad: " + arrayStu.get(i).getAge());
                 System.out.println("Genero: " + arrayStu.get(i).getGender());
+                break;
             }
         }
 

@@ -28,8 +28,11 @@ public class App {
                     lis301.addStudent(st);
                     break;
                 case 2: // Buscar estudiante
+                    System.out.println("Ingresa Id a buscar");
+                    lis301.searchStudent(in.nextInt());
                     break;
                 case 3: // Borrar estudiante
+                    System.out.println("Ingresa Id de estudiante");
                     break;
                 case 4: // Imprimir por genero
                     break;
@@ -40,7 +43,7 @@ public class App {
                     break;
                 default:
                     break;
-            } while (opcion != 5);
+            } while (opcion != 6);
         }
         
     }
