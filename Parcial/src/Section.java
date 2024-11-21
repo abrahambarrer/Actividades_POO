@@ -1,8 +1,16 @@
 import java.util.Scanner;
+import java.util.Arraylist;
 
 public class Section {
+    public String NRC;
+    public ArrayList<Student> arrayStu;
+    
     public int numStu;
     public Student[] arrayStu;
+
+    public Section(){
+        this.NRC = "21761";
+    }
 
     public Section(int size) {
         arrayStu = new Student[size];
