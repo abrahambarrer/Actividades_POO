@@ -10,12 +10,39 @@ public class Section {
 
     public Section(){
         this.NRC = "21761";
+        arrayStu = new ArrayList<>();
     }
 
-    public Section(int size) {
+    public void addStudent(Student st){
+        arrayStu.add(st);
+        System.out.println("Estudiante agregado Ok");
+    }
+
+    public void searchStudent(int id){
+        for (int i = 0; i < arrayStu.size(); i++){
+            if (id == arrayStu.get(i).getId()){
+                System.out.println("Id: " + arrayStu.get(i).getId());
+                System.out.println("Nombre: " + arrayStu.get(i).getNombre());
+                System.out.println("Edad: " + arrayStu.get(i).getAge());
+                System.out.println("Genero: " + arrayStu.get(i).getGender());
+            }
+        }
+
+        for (Student student : arrayStu){
+
+        }
+    }
+
+    @Override
+    public String toString(){
+        return "Section [NRC=" + NRC + ", arrayStu=" + arrayStu + "]";
+    }
+
+    /*public Section(int size) {
         arrayStu = new Student[size];
         numStu = 0;
     }
+
 
     public void addStudent(){
         if (numStu < arrayStu.length){
@@ -72,5 +99,5 @@ public class Section {
             }
         }
         return i;
-    }
+    }*/
 }
